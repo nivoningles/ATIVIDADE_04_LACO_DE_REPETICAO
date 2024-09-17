@@ -6,19 +6,19 @@ public class Atividade_3_Fatorial {
 
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
-        int numero = 0;
 
         System.out.print("Informe o um número: ");
-        numero = sc.nextInt();
-        int multiplcacao = 0;
-        int valor = 0;
+        int numero = sc.nextInt();
+        int valor = 1;
+        int numeroInicial = numero;
 
         do {
-            valor = numero * (numero - 1);
+            valor = valor * numero;
+            numero--;
 
-            System.out.println(valor);
+        } while (numero > 0);
 
-        } while (numero == 0);
+        System.out.println(numeroInicial+"! = "+valor);
     }
 
     }
