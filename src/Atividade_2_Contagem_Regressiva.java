@@ -11,7 +11,7 @@ public class Atividade_2_Contagem_Regressiva {
         System.out.print("Informe o um número: ");
         numero = sc.nextInt();
 
-        while (numero > -1){
+        while (numero >= 0){
             System.out.println(numero);
             numero = numero - 1;
 
